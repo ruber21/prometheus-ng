@@ -1,0 +1,68 @@
+{
+  "title": "Prometheus",
+  "logoUrl": "./assets/logo.png",
+  "mainMenuOptions": [
+    {
+      "label": "Home",
+      "icon": "fa fa-home",
+      "route": "/"
+    },
+    {
+      "label": "Layout",
+      "icon": "fas fa-newspaper",
+      "subMenu": [
+        {
+          "label": "Menu",
+          "icon": "fa fa-bars",
+          "route": "./components/menu"
+        },
+        {
+          "label": "Header",
+          "icon": "fas fa-heading",
+          "route": "./components/header"
+        },
+        {
+          "label": "Main",
+          "icon": "fas fa-align-center",
+          "route": "./components/main"
+        },
+        {
+          "label": "Footer",
+          "icon": "fas fa-shoe-prints",
+          "route": "./components/main"
+        }
+      ]
+    },
+    {
+      "label": "Components",
+      "icon": "fas fa-microchip",
+      "subMenu": [
+        {
+          "label": "Grid",
+          "icon": "fas fa-border-all",
+          "route": "./components/grid"
+        },
+        {
+          "label": "Cards",
+          "icon": "fas fa-money-check",
+          "route": "./components/cards"
+        },
+        {
+          "label": "Input",
+          "icon": "fas fa-keyboard",
+          "route": "./components/input"
+        },
+        {
+          "label": "Buttons",
+          "icon": "fas fa-check-square",
+          "route": "./components/button"
+        },
+        {
+          "label": "Table",
+          "icon": "fas fa-table",
+          "route": "./components/table"
+        }
+      ]
+    }
+  ]
+}

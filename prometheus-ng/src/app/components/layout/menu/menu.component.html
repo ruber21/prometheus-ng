@@ -1,0 +1,47 @@
+<nav class="nav-side">
+  <a href="">
+    <div class="menu-logo">
+      <img [src]="menuTree.logoUrl" alt="Logo" class="logo">
+      <span>
+        {{menuTree.title}}
+      </span>
+    </div>
+  </a>
+  <menu>
+    <ul class="main-menu-options">
+      <li *ngFor="let mainMenuOption of menuTree.mainMenuOptions" class="main-option-wrapper active" [ngClass]="{'active': mainMenuOption.active}">
+        <a [href]="mainMenuOption.route" *ngIf="!(mainMenuOption.subMenu && mainMenuOption.subMenu.length > 0); else submenu">
+        <div class="main-menu-option">
+            <i class="left-icon" [ngClass]="mainMenuOption.icon"></i>
+            <div class="menu-label">
+              <span>
+                {{mainMenuOption.label}}
+              </span>
+            </div>
+          </div>
+        </a>
+        <ng-template #submenu>
+          <div class="main-menu-option" (click)="toggleExpand($event)">
+            <i class="left-icon" [ngClass]="mainMenuOption.icon"></i>
+            <div class="menu-label">
+              <span>
+                {{mainMenuOption.label}}
+              </span>
+            </div>
+            <i *ngIf="mainMenuOption.subMenu" class="right-icon fa fa-chevron-down"></i>
+          </div>
+          <div class="submenu">
+            <ul class="submenu-options">
+              <li *ngFor="let subMenuOption of mainMenuOption.subMenu" class="sub-menu-option">
+                <a [href]="subMenuOption.route">
+                  <i [ngClass]="subMenuOption.icon"></i>
+                  <span>{{subMenuOption.label}}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ng-template>
+      </li>
+    </ul>
+  </menu>
+</nav>
