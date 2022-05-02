@@ -26,7 +26,8 @@ export const CLASS = {
   SELECT_HIDE: 'select-hide',
   SAME_AS_SELECTED: 'same-as-selected',
   SELECT_ARROW_ACTIVE: 'select-arrow-active',
-  RANGE: 'range-wrapper'
+  RANGE: 'range-wrapper',
+  LEFT_ICON: 'left-icon',
 }
 
 export const EVENT = {

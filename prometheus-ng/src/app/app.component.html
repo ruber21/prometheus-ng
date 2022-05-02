@@ -1,6 +1,18 @@
-
 <png-menu
   [menuTree]="menuTree"
 ></png-menu>
 
-<router-outlet></router-outlet>
+<png-main
+  [logoUrl]="logoUrl"
+>
+  <content>
+    <router-outlet></router-outlet>
+  </content>
+</png-main>
+
+
+<png-footer
+  [title]="title"
+  [logoUrl]="logoUrl"
+  [legend]="legend"
+  ></png-footer>

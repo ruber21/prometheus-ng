@@ -8,6 +8,8 @@ import { MenuTree } from './models/menu';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'prometheus-ng';
+  title = 'Prometheus-ng';
+  logoUrl = './assets/logo.png';
+  legend = 'Prometheus-ng for everyone';
   menuTree = menu as MenuTree;
 }

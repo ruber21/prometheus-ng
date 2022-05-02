@@ -1,5 +1,5 @@
 <nav class="nav-side">
-  <a href="">
+  <a [routerLink]="'./'">
     <div class="menu-logo">
       <img [src]="menuTree.logoUrl" alt="Logo" class="logo">
       <span>
@@ -10,7 +10,7 @@
   <menu>
     <ul class="main-menu-options">
       <li *ngFor="let mainMenuOption of menuTree.mainMenuOptions" class="main-option-wrapper active" [ngClass]="{'active': mainMenuOption.active}">
-        <a [href]="mainMenuOption.route" *ngIf="!(mainMenuOption.subMenu && mainMenuOption.subMenu.length > 0); else submenu">
+        <a [routerLink]="mainMenuOption.route" *ngIf="!(mainMenuOption.subMenu && mainMenuOption.subMenu.length > 0); else submenu">
         <div class="main-menu-option">
             <i class="left-icon" [ngClass]="mainMenuOption.icon"></i>
             <div class="menu-label">
@@ -32,8 +32,8 @@
           </div>
           <div class="submenu">
             <ul class="submenu-options">
-              <li *ngFor="let subMenuOption of mainMenuOption.subMenu" class="sub-menu-option">
-                <a [href]="subMenuOption.route">
+              <li *ngFor="let subMenuOption of mainMenuOption.subMenu" class="sub-menu-option" [ngClass]="{'active': subMenuOption.active}">
+                <a [routerLink]="subMenuOption.route">
                   <i [ngClass]="subMenuOption.icon"></i>
                   <span>{{subMenuOption.label}}</span>
                 </a>

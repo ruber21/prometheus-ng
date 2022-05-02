@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "png-component": {
+      "projectType": "library",
+      "root": "projects/png-component",
+      "sourceRoot": "projects/png-component/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/png-component/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/png-component/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/png-component/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/png-component/src/test.ts",
+            "tsConfig": "projects/png-component/tsconfig.spec.json",
+            "karmaConfig": "projects/png-component/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "prometheus-ng"

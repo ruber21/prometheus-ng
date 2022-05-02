@@ -14,22 +14,22 @@
         {
           "label": "Menu",
           "icon": "fa fa-bars",
-          "route": "./components/menu"
+          "route": "./layout/menu"
         },
         {
           "label": "Header",
           "icon": "fas fa-heading",
-          "route": "./components/header"
+          "route": "./layout/header"
         },
         {
           "label": "Main",
           "icon": "fas fa-align-center",
-          "route": "./components/main"
+          "route": "./layout/main"
         },
         {
           "label": "Footer",
           "icon": "fas fa-shoe-prints",
-          "route": "./components/main"
+          "route": "./layout/footer"
         }
       ]
     },
