@@ -2,8 +2,88 @@
 
 <hr>
 
+<p class="pad-10">
+  The left side menu of this page is rendered using the <code>png-menu</code>
+</p>
 
-
-<h2>
+<h2 class="pad-10">
   Usage
 </h2>
+
+<p class="pad-10">
+  To render the menu the code is quite simple
+</p>
+
+
+<png-grid>
+  <png-cell-md12>
+    <div class="">
+      <png-card>
+        <pre lang="HTML">
+        <code>
+  &lt;png-menu
+    [menuTree]="menuTree"
+  &gt;&lt;/png-menu&gt;
+        </code>
+      </pre>
+      </png-card>
+    </div>
+
+  </png-cell-md12>
+</png-grid>
+
+<p class="pad-10">
+  The component.ts that will make use of this menu must pass to it a MenuTree structure.
+  The following is an example
+</p>
+
+
+<png-grid>
+  <png-cell-md12>
+    <div class="">
+      <png-card>
+        <pre lang="Typescript">
+        <code>
+{{typescriptComponent}}
+        </code>
+      </pre>
+      </png-card>
+    </div>
+  </png-cell-md12>
+</png-grid>
+
+<p class="pad-10">
+  Please note that that <code>MenuTree</code> class is imported from <code>./models/menu</code> and it has the following definition
+</p>
+
+<png-grid>
+  <png-cell-md12>
+    <div class="">
+      <png-card>
+        <pre lang="Typescript">
+        <code>
+{{treeComponent}}
+        </code>
+      </pre>
+      </png-card>
+    </div>
+  </png-cell-md12>
+</png-grid>
+
+<p class="pad-10">And the menu itself is loaded from a JSON file <code>import menu from '../assets/data/menu.json';</code>
+IT is passed to the view with the line <code>menuTree = menu as MenuTree;</code> Now, a sample json menu file is the following
+</p>
+
+<png-grid>
+  <png-cell-md12>
+    <div class="">
+      <png-card>
+        <pre lang="Typescript">
+        <code>
+          {{menuJson}}
+        </code>
+      </pre>
+      </png-card>
+    </div>
+  </png-cell-md12>
+</png-grid>

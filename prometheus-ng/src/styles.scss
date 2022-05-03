@@ -6,3 +6,12 @@
 @import url('../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css');
 @import url('../node_modules/@fortawesome/fontawesome-free/css/regular.css');
 @import url('../node_modules/@fortawesome/fontawesome-free/css/solid.css');
+
+pre {
+  margin: 0;
+  background-color: #0a061a90;
+  overflow: auto;
+  code{
+    color: #eee;
+  }
+}

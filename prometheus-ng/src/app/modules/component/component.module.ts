@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ComponentRoutingModule } from './component-routing.module';
 import { CardComponent } from './card/card.component';
 import { GridComponent } from './grid/grid.component';
+import { PngComponentModule } from 'png-component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { GridComponent } from './grid/grid.component';
   ],
   imports: [
     CommonModule,
-    ComponentRoutingModule
+    ComponentRoutingModule,
+    PngComponentModule
   ]
 })
 export class ComponentModule { }

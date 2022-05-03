@@ -6,6 +6,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
+import { PngComponentComponent, PngComponentModule } from 'png-component';
 
 
 @NgModule({
@@ -13,11 +14,12 @@ import { MainComponent } from './main/main.component';
     MenuComponent,
     FooterComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
   ],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    PngComponentModule
   ]
 })
 export class LayoutModule { }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-card',
+  selector: 'png-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })

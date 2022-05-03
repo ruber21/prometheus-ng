@@ -45,7 +45,7 @@
         {
           "label": "Cards",
           "icon": "fas fa-money-check",
-          "route": "./components/cards"
+          "route": "./components/card"
         },
         {
           "label": "Input",
